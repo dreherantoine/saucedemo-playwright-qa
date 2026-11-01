@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "QA automation portfolio: Playwright + TypeScript E2E and API tests on SauceDemo, with Page Object Model, smoke/regression tags and a GitHub Actions CI.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "test:regression": "npx playwright test --grep @regression"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dreherantoine/saucedemo-playwright-qa.git"
